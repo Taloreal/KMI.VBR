@@ -1,0 +1,4 @@
+RoleName	DisableListConcatenated	ReceivesMessages
+General Manager	Pricing|Storefront Ads|Radio Advertising|Direct Mail|Billboard Advertising|Merchandising|New Survey|Survey Results|Staffing|Purchasing|Equipment|Service Repairs|Physical Inventory|Product Aging|Competitive Prices|Market Share|Population	TRUE
+Marketing Manager	Open New Store|Move Store|Close Store|Staffing|Purchasing|Equipment|Service Repairs|Physical Inventory|Trade Credit|Get Loan|Pay Loan|Transfer Cash|Consultant|Vital Signs|Financials|Products|Comment Log|Product Aging|Auto-Grader|Multi-Store Report	FALSE
+Operations Manager	Open New Store|Move Store|Close Store|Pricing|Storefront Ads|Radio Advertising|Direct Mail|Billboard Advertising|Merchandising|New Survey|Survey Results|Trade Credit|Get Loan|Pay Loan|Transfer Cash|Consultant|Vital Signs|Financials|Products|Comment Log|Competitive Prices|Market Share|Population|Auto-Grader|Multi-Store Report	FALSE

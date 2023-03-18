@@ -1,0 +1,4 @@
+Name	Format	SampleSongFilename
+KEZL	Classical	Sounds\Classica.Mid
+WPOP	Techno/Pop	Sounds\Techno.Mid
+KLRK	Lite Rock	Sounds\LiteGroo.Mid		

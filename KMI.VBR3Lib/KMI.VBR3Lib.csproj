@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{574F0929-B24B-4732-9E1F-C2D5593936EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KMI.VBR3Lib</RootNamespace>
+    <AssemblyName>KMI.VBR3Lib</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+    <ApplicationIcon>KMI.VBR3Lib.ico</ApplicationIcon>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\KMI.VBR3\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A.cs" />
+    <Compile Include="AdSimple.cs" />
+    <Compile Include="AdSpaceDrawable.cs" />
+    <Compile Include="AppBuilding.cs" />
+    <Compile Include="AppCity.cs" />
+    <Compile Include="AppConstants.cs" />
+    <Compile Include="AppEntity.cs" />
+    <Compile Include="AppFactory.cs" />
+    <Compile Include="AppSimSettings.cs" />
+    <Compile Include="AppSimState.cs" />
+    <Compile Include="AppStateAdapter.cs" />
+    <Compile Include="AppSurvey.cs" />
+    <Compile Include="Backroom.cs" />
+    <Compile Include="BackroomDrawable.cs" />
+    <Compile Include="BackroomView.cs" />
+    <Compile Include="BillboardDrawable.cs" />
+    <Compile Include="CamMountDrawable.cs" />
+    <Compile Include="Cashier.cs" />
+    <Compile Include="CityView.cs" />
+    <Compile Include="Coffee.cs" />
+    <Compile Include="CoolingDuct.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="DemographicType.cs" />
+    <Compile Include="Donut.cs" />
+    <Compile Include="Floor.cs" />
+    <Compile Include="FloorView.cs" />
+    <Compile Include="Fridge.cs" />
+    <Compile Include="frmAdDesignerSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdDesignerSimple.Designer.cs">
+      <DependentUpon>frmAdDesignerSimple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppSurveyResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppSurveyResults.Designer.cs">
+      <DependentUpon>frmAppSurveyResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAutoLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAutoLayout.Designer.cs">
+      <DependentUpon>frmAutoLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBillboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBillboard.Designer.cs">
+      <DependentUpon>frmBillboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCoupon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCoupon.Designer.cs">
+      <DependentUpon>frmCoupon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEquipment.Designer.cs">
+      <DependentUpon>frmEquipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMail.Designer.cs">
+      <DependentUpon>frmMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoveStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoveStore.Designer.cs">
+      <DependentUpon>frmMoveStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMultiStoreReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMultiStoreReport.Designer.cs">
+      <DependentUpon>frmMultiStoreReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpenNewStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpenNewStore.Designer.cs">
+      <DependentUpon>frmOpenNewStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhysicalInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhysicalInventory.Designer.cs">
+      <DependentUpon>frmPhysicalInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopulation.Designer.cs">
+      <DependentUpon>frmPopulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPricingReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPricingReport.Designer.cs">
+      <DependentUpon>frmPricingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRadio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRadio.Designer.cs">
+      <DependentUpon>frmRadio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServiceContracts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServiceContracts.Designer.cs">
+      <DependentUpon>frmServiceContracts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSurveyResultsAerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSurveyResultsAerial.Designer.cs">
+      <DependentUpon>frmSurveyResultsAerial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="God.cs" />
+    <Compile Include="IPctExpired.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemDrawable.cs" />
+    <Compile Include="MagazineRack.cs" />
+    <Compile Include="MailingList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rack.cs" />
+    <Compile Include="RadioStation.cs" />
+    <Compile Include="RadioStationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Repairman.cs" />
+    <Compile Include="ScoreSignDrawable.cs" />
+    <Compile Include="SectionBase.cs" />
+    <Compile Include="SectionBaseDrawable.cs" />
+    <Compile Include="ServiceContract.cs" />
+    <Compile Include="ServiceContractControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shelf.cs" />
+    <Compile Include="ShelfDrawable.cs" />
+    <Compile Include="ShelfStocker.cs" />
+    <Compile Include="Slushy.cs" />
+    <Compile Include="Station.cs" />
+    <Compile Include="StationDrawable.cs" />
+    <Compile Include="VBRProductType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App.resources" />
+    <EmbeddedResource Include="Data\BackroomMap.xml" />
+    <EmbeddedResource Include="Data\BuildingTypes.txt" />
+    <EmbeddedResource Include="Data\DemographicTypes.txt" />
+    <EmbeddedResource Include="Data\FloorMap.xml" />
+    <EmbeddedResource Include="Data\MultiplayerRoles.txt" />
+    <EmbeddedResource Include="Data\ProductTypes.txt" />
+    <EmbeddedResource Include="Data\RadioStations.txt" />
+    <EmbeddedResource Include="Data\Suppliers.txt" />
+    <EmbeddedResource Include="Data\SurveyQuestions.txt" />
+    <EmbeddedResource Include="frmAdDesignerSimple.resources" />
+    <EmbeddedResource Include="frmAppSurveyResults.resources" />
+    <EmbeddedResource Include="frmAutoLayout.resources" />
+    <EmbeddedResource Include="frmBillboard.resources" />
+    <EmbeddedResource Include="frmCoupon.resources" />
+    <EmbeddedResource Include="frmEquipment.resources" />
+    <EmbeddedResource Include="frmMail.resources" />
+    <EmbeddedResource Include="frmMain.resources" />
+    <EmbeddedResource Include="frmMoveStore.resources" />
+    <EmbeddedResource Include="frmMultiStoreReport.resources" />
+    <EmbeddedResource Include="frmOpenNewStore.resources" />
+    <EmbeddedResource Include="frmPhysicalInventory.resources" />
+    <EmbeddedResource Include="frmPopulation.resources" />
+    <EmbeddedResource Include="frmRadio.resources" />
+    <EmbeddedResource Include="frmServiceContracts.resources" />
+    <EmbeddedResource Include="frmSurveyResultsAerial.resources" />
+    <EmbeddedResource Include="Images\BackroomView\Backroom.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case0.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case1.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case10.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case11.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case12.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case13.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case14.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case15.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case16.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case17.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case18.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case19.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case2.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case20.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case21.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case22.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case23.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case24.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case3.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case4.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case5.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case6.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case7.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case8.png" />
+    <EmbeddedResource Include="Images\BackroomView\Case9.png" />
+    <EmbeddedResource Include="Images\BackroomView\FlapsOff.png" />
+    <EmbeddedResource Include="Images\BackroomView\FlapsOn0.png" />
+    <EmbeddedResource Include="Images\BackroomView\FlapsOn1.png" />
+    <EmbeddedResource Include="Images\BackroomView\FlapsOn2.png" />
+    <EmbeddedResource Include="Images\BackroomView\FlapsOn3.png" />
+    <EmbeddedResource Include="Images\BackroomView\FlapsOn4.png" />
+    <EmbeddedResource Include="Images\BackroomView\FlapsOn5.png" />
+    <EmbeddedResource Include="Images\BackroomView\Vent.png" />
+    <EmbeddedResource Include="Images\CityView\BB0.png" />
+    <EmbeddedResource Include="Images\CityView\BB0Small.png" />
+    <EmbeddedResource Include="Images\CityView\BB1.png" />
+    <EmbeddedResource Include="Images\CityView\BB1Small.png" />
+    <EmbeddedResource Include="Images\CityView\BB2.png" />
+    <EmbeddedResource Include="Images\CityView\BB2Small.png" />
+    <EmbeddedResource Include="Images\CityView\BB3.png" />
+    <EmbeddedResource Include="Images\CityView\BB3Small.png" />
+    <EmbeddedResource Include="Images\CityView\BB4.png" />
+    <EmbeddedResource Include="Images\CityView\BB4Small.png" />
+    <EmbeddedResource Include="Images\CityView\BB5.png" />
+    <EmbeddedResource Include="Images\CityView\BB5Small.png" />
+    <EmbeddedResource Include="Images\CityView\Building0.png" />
+    <EmbeddedResource Include="Images\CityView\Building1.png" />
+    <EmbeddedResource Include="Images\CityView\Building2.png" />
+    <EmbeddedResource Include="Images\CityView\Building3.png" />
+    <EmbeddedResource Include="Images\CityView\Building4.png" />
+    <EmbeddedResource Include="Images\CityView\Building5.png" />
+    <EmbeddedResource Include="Images\CityView\BuildingMedium0.png" />
+    <EmbeddedResource Include="Images\CityView\BuildingMedium1.png" />
+    <EmbeddedResource Include="Images\CityView\BuildingMedium2.png" />
+    <EmbeddedResource Include="Images\CityView\BuildingMedium3.png" />
+    <EmbeddedResource Include="Images\CityView\BuildingMedium4.png" />
+    <EmbeddedResource Include="Images\CityView\BuildingMedium5.png" />
+    <EmbeddedResource Include="Images\CityView\BuildingSmall0.png" />
+    <EmbeddedResource Include="Images\CityView\BuildingSmall1.png" />
+    <EmbeddedResource Include="Images\CityView\BuildingSmall2.png" />
+    <EmbeddedResource Include="Images\CityView\BuildingSmall3.png" />
+    <EmbeddedResource Include="Images\CityView\BuildingSmall4.png" />
+    <EmbeddedResource Include="Images\CityView\BuildingSmall5.png" />
+    <EmbeddedResource Include="Images\CityView\CarNESW.png" />
+    <EmbeddedResource Include="Images\CityView\CarNWSE.png" />
+    <EmbeddedResource Include="Images\CityView\CarSmallNESW.png" />
+    <EmbeddedResource Include="Images\CityView\CarSmallNWSE.png" />
+    <EmbeddedResource Include="Images\CityView\City.png" />
+    <EmbeddedResource Include="Images\CityView\CitySmall.png" />
+    <EmbeddedResource Include="Images\CityView\Construction.png" />
+    <EmbeddedResource Include="Images\CityView\ConstructionSmall.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot0.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot0Small.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot1.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot1Small.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot2.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot2Small.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot3.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot3Small.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot4.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot4Small.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot5.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot5Small.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot6.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot6Small.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot7.png" />
+    <EmbeddedResource Include="Images\CityView\GrassPlot7Small.png" />
+    <EmbeddedResource Include="Images\CityView\Snow.png" />
+    <EmbeddedResource Include="Images\Cursors\Billboard.gif" />
+    <EmbeddedResource Include="Images\Cursors\Mail.gif" />
+    <EmbeddedResource Include="Images\Cursors\NoBillboard.gif" />
+    <EmbeddedResource Include="Images\Cursors\ZoomIn.png" />
+    <EmbeddedResource Include="Images\Cursors\ZoomOut.png" />
+    <EmbeddedResource Include="Images\FloorView\Camera.png" />
+    <EmbeddedResource Include="Images\FloorView\CameraMount.png" />
+    <EmbeddedResource Include="Images\FloorView\CameraMountSE.png" />
+    <EmbeddedResource Include="Images\FloorView\CameraSE.png" />
+    <EmbeddedResource Include="Images\FloorView\CashRegister.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BFCB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BFCC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BFCH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BFHB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BFHC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BFHH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BFSB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BFSC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BFSH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BFWB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BFWC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BFWH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BMCB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BMCC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BMCH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BMHB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BMHC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BMHH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BMSB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BMSC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BMSH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BMWB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BMWC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\BMWH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EFCB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EFCC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EFCH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EFHB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EFHC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EFHH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EFSB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EFSC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EFSH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EFWB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EFWC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EFWH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EMCB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EMCC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EMCH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EMHB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EMHC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EMHH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EMSB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EMSC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EMSH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EMWB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EMWC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\EMWH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\RFFH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\RFSH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\RFWH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\RMFB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\RMFC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\RMSB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\RMSC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\RMWB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\RMWC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SFCB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SFCC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SFCH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SFHB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SFHC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SFHH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SFSB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SFSC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SFSH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SFWB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SFWC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SFWH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SMCB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SMCC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SMCH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SMHB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SMHC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SMHH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SMSB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SMSC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SMSH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SMWB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SMWC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\SMWH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\StaffingPic.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WFCB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WFCC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WFCH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WFHB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WFHC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WFHH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WFSB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WFSC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WFSH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WFWB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WFWC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WFWH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WMCB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WMCC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WMCH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WMHB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WMHC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WMHH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WMSB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WMSC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WMSH.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WMWB.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WMWC.png" />
+    <EmbeddedResource Include="Images\FloorView\Characters\WMWH.png" />
+    <EmbeddedResource Include="Images\FloorView\Coffee0.png" />
+    <EmbeddedResource Include="Images\FloorView\Coffee1.png" />
+    <EmbeddedResource Include="Images\FloorView\Coffee2.png" />
+    <EmbeddedResource Include="Images\FloorView\Coffee3.png" />
+    <EmbeddedResource Include="Images\FloorView\Coffee4.png" />
+    <EmbeddedResource Include="Images\FloorView\CoffeeBroken0.png" />
+    <EmbeddedResource Include="Images\FloorView\CoffeeBroken1.png" />
+    <EmbeddedResource Include="Images\FloorView\Counter.png" />
+    <EmbeddedResource Include="Images\FloorView\Donut0.png" />
+    <EmbeddedResource Include="Images\FloorView\Donut1.png" />
+    <EmbeddedResource Include="Images\FloorView\Donut2.png" />
+    <EmbeddedResource Include="Images\FloorView\Donut3.png" />
+    <EmbeddedResource Include="Images\FloorView\Donut4.png" />
+    <EmbeddedResource Include="Images\FloorView\Floor.png" />
+    <EmbeddedResource Include="Images\FloorView\Fridge.png" />
+    <EmbeddedResource Include="Images\FloorView\FridgeBroken0.png" />
+    <EmbeddedResource Include="Images\FloorView\FridgeBroken1.png" />
+    <EmbeddedResource Include="Images\FloorView\FridgeFront.png" />
+    <EmbeddedResource Include="Images\FloorView\FridgeShelf.png" />
+    <EmbeddedResource Include="Images\FloorView\FridgeSide.png" />
+    <EmbeddedResource Include="Images\FloorView\FridgeTop.png" />
+    <EmbeddedResource Include="Images\FloorView\Magazine.png" />
+    <EmbeddedResource Include="Images\FloorView\MagazineShelf.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod0.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod1.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod10.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod11.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod12.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod13.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod14.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod15.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod16.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod17.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod18.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod19.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod2.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod20.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod21.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod22.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod23.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod24.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod3.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod4.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod5.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod6.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod7.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod8.png" />
+    <EmbeddedResource Include="Images\FloorView\ProductsLarge\Prod9.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod0.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod1.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod10.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod11.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod12.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod13.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod14.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod15.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod16.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod17.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod18.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod19.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod2.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod20.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod21.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod22.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod23.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod24.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod3.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod4.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod5.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod6.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod7.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod8.png" />
+    <EmbeddedResource Include="Images\FloorView\Products\Prod9.png" />
+    <EmbeddedResource Include="Images\FloorView\Rack.png" />
+    <EmbeddedResource Include="Images\FloorView\RackShelf.png" />
+    <EmbeddedResource Include="Images\FloorView\ShelfLife0.gif" />
+    <EmbeddedResource Include="Images\FloorView\ShelfLife1.gif" />
+    <EmbeddedResource Include="Images\FloorView\ShelfLife2.gif" />
+    <EmbeddedResource Include="Images\FloorView\ShelfLife3.gif" />
+    <EmbeddedResource Include="Images\FloorView\Slushie0.png" />
+    <EmbeddedResource Include="Images\FloorView\Slushie1.png" />
+    <EmbeddedResource Include="Images\FloorView\Slushie2.png" />
+    <EmbeddedResource Include="Images\FloorView\Slushie3.png" />
+    <EmbeddedResource Include="Images\FloorView\Slushie4.png" />
+    <EmbeddedResource Include="Images\FloorView\SlushieBroken0.png" />
+    <EmbeddedResource Include="Images\FloorView\SlushieBroken1.png" />
+    <EmbeddedResource Include="Images\FloorView\Windows.png" />
+    <EmbeddedResource Include="Images\StorefrontView\Storefront.png" />
+    <EmbeddedResource Include="RadioStationControl.resources" />
+    <EmbeddedResource Include="ServiceContractControl.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KMI.Biz.Banking\KMI.Biz.Banking.csproj">
+      <Project>{f16f0971-ce4e-4251-9324-7fd86479fc16}</Project>
+      <Name>KMI.Biz.Banking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Biz.City\KMI.Biz.City.csproj">
+      <Project>{33f4d511-f4c7-431b-8b67-477a13e3b2bd}</Project>
+      <Name>KMI.Biz.City</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Biz.Product\KMI.Biz.Product.csproj">
+      <Project>{7888a305-fb9f-4f34-859f-d4795d05ff07}</Project>
+      <Name>KMI.Biz.Product</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Biz.Staffing\KMI.Biz.Staffing.csproj">
+      <Project>{a8725e08-6d1d-4a73-a0f0-02665293092b}</Project>
+      <Name>KMI.Biz.Staffing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Biz\KMI.Biz.csproj">
+      <Project>{ac3ac9ad-d0c8-445e-9376-72850452b8b2}</Project>
+      <Name>KMI.Biz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Sim\KMI.Sim.csproj">
+      <Project>{b2aa7eea-6a00-4fd7-b3ae-54508b2770b0}</Project>
+      <Name>KMI.Sim</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Utility\KMI.Utility.csproj">
+      <Project>{01a31c53-5e33-4add-9378-91ea76c81985}</Project>
+      <Name>KMI.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

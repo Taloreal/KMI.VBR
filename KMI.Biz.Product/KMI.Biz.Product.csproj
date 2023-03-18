@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7888A305-FB9F-4F34-859F-D4795D05FF07}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KMI.Biz.Product</RootNamespace>
+    <AssemblyName>KMI.Biz.Product</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\KMI.VBR3\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountsPayable.cs" />
+    <Compile Include="AccountsReceivable.cs" />
+    <Compile Include="Ad.cs" />
+    <Compile Include="Consumer.cs" />
+    <Compile Include="CustomControls\ARInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerBase.cs" />
+    <Compile Include="frmAdDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdDesigner.Designer.cs">
+      <DependentUpon>frmAdDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerCredit.Designer.cs">
+      <DependentUpon>frmCustomerCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPricing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPricing.Designer.cs">
+      <DependentUpon>frmPricing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPricingCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPricingCustom.Designer.cs">
+      <DependentUpon>frmPricingCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchasing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchasing.Designer.cs">
+      <DependentUpon>frmPurchasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchasingCustom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchasingCustom.Designer.cs">
+      <DependentUpon>frmPurchasingCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportsAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportsAP.Designer.cs">
+      <DependentUpon>frmReportsAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportsAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportsAR.Designer.cs">
+      <DependentUpon>frmReportsAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTradeCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTradeCredit.Designer.cs">
+      <DependentUpon>frmTradeCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphicAdElement.cs" />
+    <Compile Include="GraphicAdElementControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IBizProductStateAdapter.cs" />
+    <Compile Include="Invoice.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="PricingPolicy.cs" />
+    <Compile Include="ProductType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchasingPolicy.cs" />
+    <Compile Include="Receivable.cs" />
+    <Compile Include="Supplier.cs" />
+    <Compile Include="TextAdElement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomControls\ARInfo.resources" />
+    <EmbeddedResource Include="frmAdDesigner.resources" />
+    <EmbeddedResource Include="frmCustomerCredit.resources" />
+    <EmbeddedResource Include="frmPricing.resources" />
+    <EmbeddedResource Include="frmPricingCustom.resources" />
+    <EmbeddedResource Include="frmPurchasing.resources" />
+    <EmbeddedResource Include="frmPurchasingCustom.resources" />
+    <EmbeddedResource Include="frmReportsAP.resources" />
+    <EmbeddedResource Include="frmReportsAR.resources" />
+    <EmbeddedResource Include="frmTradeCredit.resources" />
+    <EmbeddedResource Include="GraphicAdElementControl.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KMI.Sim\KMI.Sim.csproj">
+      <Project>{b2aa7eea-6a00-4fd7-b3ae-54508b2770b0}</Project>
+      <Name>KMI.Sim</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KMI.Utility\KMI.Utility.csproj">
+      <Project>{01a31c53-5e33-4add-9378-91ea76c81985}</Project>
+      <Name>KMI.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

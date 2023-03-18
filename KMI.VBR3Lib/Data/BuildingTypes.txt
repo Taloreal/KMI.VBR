@@ -1,0 +1,7 @@
+Index	Name	MaxOccupants	CanTakeSign
+0	Store	0	FALSE
+1	Apartments	3	TRUE
+2	Offices	6	TRUE
+3	Senior Housing	6	TRUE
+4	Classrooms	9	FALSE
+5	Dormitory	9	FALSE

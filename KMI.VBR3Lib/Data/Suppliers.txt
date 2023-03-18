@@ -1,0 +1,2 @@
+Name	DaysToPay	EarlyPayDays	EarlyPayDiscount	RelativePrice
+Acme	30	7	0.02	1

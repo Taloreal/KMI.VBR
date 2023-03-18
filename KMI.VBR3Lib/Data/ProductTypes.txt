@@ -1,0 +1,26 @@
+Index	Name	ShelfLife	Seasonality	Cost	IsImpulseItem	Stealability	RackType	FridgeOK	ItemsPerCase	CaseHeight	ComplementedBy	ProductSpacing	MarginMultiplier
+0	Ice Cream	360	0	2.51	TRUE	0	Refrigeration Unit	FALSE	9	0.711	9	-1	0
+1	Milk	7	0	2.65	FALSE	1	Refrigeration Unit	FALSE	9	1.022	-1	-1	0
+2	Aspirin	540	0	4.19	FALSE	2	Shelf Rack	FALSE	6	0.755	-1	8	0
+3	Cold and Flu	360	-1	3.49	FALSE	2	Shelf Rack	FALSE	9	0.8	-1	-1	0
+4	Generic Cola	540	0	0.52	TRUE	1	Shelf Rack	TRUE	9	1.022	-1	-1	0
+5	Primo Cola	540	0	1.05	TRUE	1	Shelf Rack	TRUE	9	1.022	-1	-1	0
+6	Bolt Cola	540	0	0.83	TRUE	1	Shelf Rack	TRUE	9	1.022	-1	-1	0
+7	Detergent	3600	0	4.54	FALSE	1	Shelf Rack	FALSE	6	1.022	-1	-1	0
+8	Salsa	540	0	2.02	FALSE	0	Shelf Rack	FALSE	9	0.8	-1	-1	0
+9	Whipped Cream	180	0	1.74	FALSE	0	Refrigeration Unit	FALSE	12	0.8	-1	-1	0
+10	Nacho Chips	60	0	2.3	FALSE	0	Shelf Rack	FALSE	8	0.933	8	-1	0
+11	Oats Cereal	270	0	2.37	FALSE	1	Shelf Rack	FALSE	8	1.022	-1	-1	0
+12	Wiper Fluid	3600	-1	1.11	TRUE	0	Shelf Rack	FALSE	16	1.155	-1	-1	0
+13	Sunscreen	720	1	4.15	TRUE	2	Shelf Rack	FALSE	12	0.888	-1	-1	0
+14	TrimQuick	90	0	4.89	FALSE	2	Shelf Rack	FALSE	9	0.844	-1	-1	0
+15	Baby Formula	540	0	8.39	FALSE	2	Shelf Rack	FALSE	9	0.711	-1	-1	0
+16	Shampoo	3600	0	2.79	FALSE	1	Shelf Rack	FALSE	12	1.022	-1	-1	0
+17	Seniority Today	30	0	3.33	TRUE	1	Magazine Rack	FALSE	10	0.8	-1	8	0
+18	Working Life	30	0	2.45	TRUE	1	Magazine Rack	FALSE	10	0.8	-1	8	0
+19	Student Living	30	0	2.45	TRUE	1	Magazine Rack	FALSE	10	0.8	-1	8	0
+20	Bread	7	0	1.87	FALSE	1	Shelf Rack	FALSE	8	0.8	-1	8	0
+21	Eggs	7	0	1.53	FALSE	1	Refrigeration Unit	FALSE	6	0.8	-1	8	0
+22	Coffee	90	0	0.11	FALSE	0	Coffee Station	FALSE	4	1.1	-1	-1	3
+23	Donuts	2	0	0.42	TRUE	1	Donut Station	FALSE	4	1	-1	-1	0
+24	Slushies	90	1	0.14	TRUE	0	Slushy Machine	FALSE	4	1	-1	-1	4

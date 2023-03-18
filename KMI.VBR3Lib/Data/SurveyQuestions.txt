@@ -1,0 +1,13 @@
+ShortName	Question	PossibleResponsesConcatenated	AnswersAreEntities	MultiEntity
+live	Where do you live?	ave|street|bldg	FALSE	FALSE
+work	Where do you work?	ave|street|bldg	FALSE	FALSE
+age	What is your age?	10 to 25|25to 40|40 to 55|55 to 70|Over 70	FALSE	FALSE
+occupation	What is your occupation?	Student|Office Professional|Retired	FALSE	FALSE
+howaware	How did you become aware of each store?	Not Aware|Store Sign|Radio|Billboards|Direct Mail|Store Front Ads	FALSE	TRUE
+shoppedthisweek	Where did you last shop this week?		TRUE	FALSE
+productpreference	What product do you need most often?	Milk|Aspirin|Cold and Flu|Detergent|Nacho Chips|Oats Cereal|TrimQuick|Baby Formula|Shampoo|Bread|Eggs|Coffee	FALSE	FALSE
+preferredradio	What radio station do you listen to most?	Classical|Techno/Pop|Lite Rock	FALSE	FALSE
+shoppingtime	When do you prefer to shop?	Morning/Commute|During the Day|Evening/Commute|Late Night	FALSE	FALSE
+opinionradio	Have you heard each store's radio adverstising?	No|Yes	FALSE	TRUE
+opinionbillboards	Have you seen any billboards for each store?	No|Yes	FALSE	TRUE
+opiniondirectmail	What do you think of each store's direct mail advertising?	Didn't get any|Not appealing|Appealing|Very appealing	FALSE	TRUE
